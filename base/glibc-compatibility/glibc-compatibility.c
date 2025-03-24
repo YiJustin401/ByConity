@@ -253,7 +253,7 @@ ssize_t preadv(int __fd, const struct iovec *__iovec, int __count, __off_t __off
 #define ALIGN (sizeof(size_t))
 #define ONES ((size_t)-1/UCHAR_MAX)
 #define HIGHS (ONES * (UCHAR_MAX/2+1))
-#define HASZERO(x) ((x)-ONES & ~(x) & HIGHS)
+#define HASZERO(x) (((x)-ONES) & ~(x) & HIGHS)
 
 char *__strchrnul(const char *s, int c)
 {

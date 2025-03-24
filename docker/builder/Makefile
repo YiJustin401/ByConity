@@ -9,6 +9,7 @@ pull:
 
 image:
 	test -f foundationdb-clients_7.1.27-1_amd64.deb || curl -L -o foundationdb-clients_7.1.27-1_amd64.deb https://github.com/apple/foundationdb/releases/download/7.1.27/foundationdb-clients_7.1.27-1_amd64.deb
+	test -f cmake-3.26.0-linux-x86_64.tar.gz || curl -L -o cmake-3.26.0-linux-x86_64.tar.gz https://cmake.org/files/v3.26/cmake-3.26.0-linux-x86_64.tar.gz
 	docker build --network=host -t byconity/byconity-builder .
 
 image_push:
