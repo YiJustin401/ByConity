@@ -113,3 +113,4 @@ catalog_service:
   fdb:
     cluster_file: /config/fdb.cluster
 hdfs_addr: "hdfs://hdfs-namenode:9000"
+cnch_config: "/config/cnch-config.yml"
